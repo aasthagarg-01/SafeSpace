@@ -206,7 +206,7 @@ SafeSpace/
 Clone the repository:
 
 ```bash
-git clone [<repository-url>](https://github.com/aasthagarg-01/SafeSpace.git)
+git clone https://github.com/aasthagarg-01/SafeSpace.git
 ```
 
 Navigate to the project directory:
