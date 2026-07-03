@@ -121,3 +121,131 @@ The fusion mechanism:
 This improves robustness compared to traditional single-input stress detection systems.
 
 ---
+
+## Project Workflow
+
+The SafeSpace workflow follows an end-to-end AI pipeline from data collection to personalized recommendations.
+
+1. **Data Collection**
+   - Collects inputs from facial images, speech recordings, physiological sensors, and survey responses.
+
+2. **Data Preprocessing**
+   - Processes each modality using suitable preprocessing techniques:
+     - Image resizing and normalization
+     - MFCC extraction from audio
+     - Physiological signal scaling
+     - Survey response encoding
+
+3. **Model Prediction**
+   - Each modality-specific deep learning model generates an independent stress prediction.
+
+4. **Fusion Layer**
+   - Agreement-Aware Fusion combines individual predictions to calculate the final stress score.
+
+5. **Recommendation Generation**
+   - The AI assistant generates personalized stress management suggestions based on the detected stress level.
+
+---
+
+## Results & Evaluation
+
+Individual models were trained and evaluated separately before applying multimodal fusion.
+
+| Model | Evaluation Result |
+|------|------------------|
+| Physiological Signal Model | 82% Accuracy |
+| Facial Expression Model | 83% Accuracy |
+| Survey-Based Model | 90% Accuracy |
+| Audio-Based Model | 94% Accuracy |
+
+The multimodal approach improves reliability by combining different stress indicators instead of depending on a single source of information.
+
+---
+
+## Model Performance Metrics
+
+| Modality | Precision | Recall | F1-Score |
+|---------|----------|--------|---------|
+| Physiological | 0.82 | 0.77 | 0.79 |
+| Facial Expression | 0.83 | 0.83 | 0.83 |
+| Survey | 0.91 | 0.91 | 0.90 |
+| Audio | 0.94 | 0.94 | 0.94 |
+
+---
+
+## Project Structure
+
+```
+SafeSpace/
+│
+├── AIModel/
+│   ├── saved_models/
+│   └── model scripts
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── supabase/
+│   └── functions/
+│
+├── public/
+│
+├── package.json
+├── README.md
+└── vite.config.ts
+```
+
+---
+
+## Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd safe-space
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run locally at:
+
+```text
+http://localhost:5173/
+```
+
+---
+
+## Usage
+
+Users can access SafeSpace through the deployed web application:
+
+https://safespac-ai-4.netlify.app/
+
+The application allows users to:
+
+- Provide stress-related inputs
+- Analyze stress indicators using AI models
+- Receive stress predictions
+- Get personalized wellness recommendations
+
+---
