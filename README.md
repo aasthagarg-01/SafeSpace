@@ -252,21 +252,17 @@ The application allows users to:
 
 ## Limitations
 
-- Model performance depends on the quality and availability of input data from different modalities.
-- Real-world stress detection may vary due to environmental factors and individual differences.
-- Physiological predictions require compatible sensor data for accurate analysis.
-- The system provides wellness support and is not intended to replace professional medical diagnosis.
+- Model performance depends on the quality and diversity of input data, as variations in sensor readings, audio quality, and facial conditions can affect prediction accuracy.
+- Real-world performance can be further improved by validating the system on larger and more diverse user groups.
 
 ---
 
 ## Future Improvements
 
-- Improve model generalization using larger and more diverse datasets.
-- Optimize models for real-time stress detection on wearable devices.
-- Enhance multimodal fusion using adaptive learning-based techniques.
-- Extend support for additional physiological and behavioral signals.
-- Improve personalization of AI-generated wellness recommendations.
-
+- Enhance multimodal fusion using advanced deep learning techniques for more adaptive stress prediction.
+- Optimize models for real-time wearable device integration.
+- Improve AI-generated recommendations by incorporating more personalized user context.
+  
 ---
 
 ## References
