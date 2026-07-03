@@ -249,3 +249,33 @@ The application allows users to:
 - Get personalized wellness recommendations
 
 ---
+
+## Limitations
+
+- Model performance depends on the quality and availability of input data from different modalities.
+- Real-world stress detection may vary due to environmental factors and individual differences.
+- Physiological predictions require compatible sensor data for accurate analysis.
+- The system provides wellness support and is not intended to replace professional medical diagnosis.
+
+---
+
+## Future Improvements
+
+- Improve model generalization using larger and more diverse datasets.
+- Optimize models for real-time stress detection on wearable devices.
+- Enhance multimodal fusion using adaptive learning-based techniques.
+- Extend support for additional physiological and behavioral signals.
+- Improve personalization of AI-generated wellness recommendations.
+
+---
+
+## References
+
+This project is based on research and open-source technologies in multimodal stress detection, deep learning, and AI-based mental wellness systems.
+
+- WorkStress3D Dataset
+- RAVDESS Emotional Speech Dataset
+- DASS-21 Psychological Assessment Dataset
+- TensorFlow & PyTorch Deep Learning Frameworks
+- Hugging Face Transformers
+- Supabase Documentation
