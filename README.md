@@ -212,7 +212,7 @@ git clone https://github.com/aasthagarg-01/SafeSpace.git
 Navigate to the project directory:
 
 ```bash
-cd safe-space
+cd SafeSpace
 ```
 
 Install dependencies:
